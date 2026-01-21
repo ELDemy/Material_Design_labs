@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="sign_in">
+        <item name="cornerSizeTopLeft">15sp</item>
+        <item name="cornerSizeBottomLeft">15sp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:backgroundTint">#FF2DB6A3</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:elevation">1dp</item>
+    </style>
+
+    <style name="register">
+        <item name="cornerSizeTopRight">15sp</item>
+        <item name="cornerSizeBottomRight">15sp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#FF202322</item>
+        <item name="android:backgroundTint">#FFDADADA</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

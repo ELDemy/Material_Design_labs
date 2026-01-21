@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyMaterialDesign</string>
+    <string name="foodienator">foodienator</string>
+    <string name="Foodienator">Foodienator</string>
+    <string name="sign_in">Sign in</string>
+    <string name="register">Register</string>
+    <string name="lorem_ipsum">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam maecenas mi non sed ut odio. Non, justo, sed facilisi et.
+</string>
+</resources>

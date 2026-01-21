@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF22C7A9"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/plate"
+        android:layout_width="305dp"
+        android:layout_height="545dp"
+        android:layout_marginStart="20dp"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/spaghitti" />
+
+    <TextView
+        android:id="@+id/foodienator"
+        android:layout_width="210dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="500dp"
+        android:gravity="center_horizontal"
+        android:text="@string/Foodienator"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="33sp" />
+
+</FrameLayout>

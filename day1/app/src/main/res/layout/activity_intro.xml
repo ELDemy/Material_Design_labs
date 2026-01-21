@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="30dp"
+    tools:context=".IntroActivity">
+
+    <ImageView
+        android:id="@+id/plate"
+        android:layout_width="362dp"
+        android:layout_height="351dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="40dp"
+        app:srcCompat="@drawable/spaghitti" />
+
+    <TextView
+        android:id="@+id/foodienator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="7dp"
+        android:text="@string/Foodienator"
+        android:textColor="#FFFFFF"
+        android:textSize="33sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/order_your_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text="Order your favorite Meals \n Here!"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:gravity="top"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="144dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sign_in"
+            app:shapeAppearance="@style/sign_in"
+            style="@style/sign_in"
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/register"
+            app:shapeAppearance="@style/register"
+            style="@style/register"
+            android:elevation="100dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

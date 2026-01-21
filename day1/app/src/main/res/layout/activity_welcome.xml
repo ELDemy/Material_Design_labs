@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity">
+
+
+    <ImageView
+
+        android:id="@+id/imageView"
+        android:layout_width="263dp"
+        android:layout_height="311dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="11dp"
+        app:srcCompat="@drawable/welcome" />
+
+    <TextView
+        android:id="@+id/welcome_bac"
+        android:layout_width="230dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="93dp"
+        android:layout_marginTop="5dp"
+        android:gravity="top"
+        android:text="Welcome Back"
+        android:textColor="#464444"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/lorem_ipsum"
+        android:layout_width="307dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/welcome_bac"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/lorem_ipsum"
+        android:textColor="#464444"
+        android:textSize="13sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lorem_ipsum"
+        android:layout_marginTop="7dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        app:startIconDrawable="@drawable/user"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        app:startIconTint="#FF22C7A9">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="UserName"
+            android:paddingStart="60dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInputLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="8dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        app:endIconMode="password_toggle"
+        app:endIconTint="#FF22C7A9"
+        app:startIconDrawable="@drawable/lock"
+        app:startIconTint="#FF22C7A9">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingStart="60dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/sign_up"
+        android:layout_width="60dp"
+        android:layout_height="22dp"
+        android:layout_below="@+id/password"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal|top"
+        android:text="Sign up"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/forgot_pass"
+        android:layout_width="138dp"
+        android:layout_height="23dp"
+        android:layout_below="@+id/password"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="251dp"
+        android:layout_marginTop="2dp"
+        android:gravity="top"
+        android:text="Forgot Password ?"
+        android:textColor="#2D2626"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgot_pass"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="41dp"
+        android:backgroundTint="#FFDFB497"
+        android:text="Login" />
+</RelativeLayout>
