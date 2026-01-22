@@ -9,7 +9,7 @@
         android:id="@+id/detailsFragment"
         android:name="com.dmy.mynavigation.DetailsFragment"
         android:label="fragment_details"
-        tools:layout="@layout/fragment_details" >
+        tools:layout="@layout/fragment_details">
         <argument
             android:name="details"
             app:argType="com.dmy.mynavigation.UserData" />
@@ -18,9 +18,21 @@
         android:id="@+id/formFragment"
         android:name="com.dmy.mynavigation.FormFragment"
         android:label="fragment_form"
-        tools:layout="@layout/fragment_form" >
+        tools:layout="@layout/fragment_form">
         <action
             android:id="@+id/action_formFragment_to_detailsFragment"
             app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/action_formFragment_to_anotherFragment"
+            app:destination="@id/anotherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/anotherFragment"
+        android:name="com.dmy.mynavigation.AnotherFragment"
+        android:label="fragment_another"
+        tools:layout="@layout/fragment_another">
+        <action
+            android:id="@+id/action_anotherFragment_to_formFragment"
+            app:destination="@id/formFragment" />
     </fragment>
 </navigation>

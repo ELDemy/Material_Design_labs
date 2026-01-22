@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/formFragment"
+        android:title="form" />
+    <item
+        android:id="@+id/detailsFragment"
+        android:title="details" />
+    <item android:title="Other screen"
+        android:id="@+id/anotherFragment"/>
+</menu>
